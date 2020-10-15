@@ -1,0 +1,38 @@
+.action-layout {
+  padding: @absolute-very-tight;
+  margin: @absolute-tight @absolute-very-tight;
+  border-radius: @absolute-very-tight;
+  box-sizing: border-box;
+  &-header {
+    margin: 0 @absolute-very-tight;
+    padding: @absolute-very-tight;
+    .font(@primary-fg-color, 1rem, sans-serif, @font-weight-thick);
+  }
+  &-sub-layout {
+    padding:  0 @absolute-very-tight;
+    margin: 0 @absolute-very-tight;
+    border-radius: @absolute-very-tight;
+    box-sizing: border-box;
+
+    &-header {
+      text-align: center;
+      margin: 0;
+      .font(@primary-fg-color, 0.8rem, sans-serif, @font-weight-thick);
+    }
+    &-body {
+      padding: @absolute-very-tight;
+      .display();
+      .flex-wrap(wrap);
+      .justify-content(space-between);
+      box-sizing: border-box;
+      button {
+        .flex-basis(40%);
+        max-width:40%;
+      }
+    }
+  }
+}
+hr {
+  border-top: 3px solid #bbb;
+  margin: 0px
+}

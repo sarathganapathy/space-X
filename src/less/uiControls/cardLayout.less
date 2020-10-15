@@ -1,0 +1,38 @@
+.card-layout {
+    margin: @absolute-tight @absolute-very-tight;
+    border-radius: @absolute-very-tight;
+    box-sizing: border-box;
+
+    &-body-content {
+        &-items {
+            .large-screen( {
+              .flex-basis(25%);
+              max-width:25%;
+            }
+
+            );
+
+            .medium-screen( {
+              .flex-basis(50%);
+              max-width:50%;
+            }
+
+            );
+
+            .small-screen( {
+              .flex-basis(100%);
+              max-width:100%;
+            }
+
+            );
+            padding: @absolute-very-tight;
+            box-sizing: border-box;
+        }
+
+        &-no-results {
+            .flex-grow(1);
+            padding: @absolute-very-tight;
+            text-align: center;
+        }
+    }
+}

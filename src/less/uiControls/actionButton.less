@@ -1,0 +1,12 @@
+.action-button {
+  padding: @absolute-very-tight;
+  margin: @absolute-very-tight;
+  border-radius: @absolute-very-tight;
+  background-color: @primary-button;
+  .font(@white, @absolute-loose, monospace, @font-weight-thick);
+  color: @black;
+  border: none;
+  &[aria-selected="true"] {
+    background-color: @primary-button-selected;
+  }
+}

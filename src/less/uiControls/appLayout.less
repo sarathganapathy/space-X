@@ -1,0 +1,95 @@
+.app {
+  &-root {
+    padding: @absolute-very-tight;
+    margin: @absolute-tight @absolute-very-tight;
+    border-radius: @absolute-very-tight;
+    box-sizing: border-box;
+  }
+  &-header {
+    margin: @absolute-very-tight;
+    padding: @absolute-very-tight;
+    .font(@primary-fg-color, @absolute-very-loose, serif, @font-weight-thick);
+  }
+  &-footer {
+    .display();
+    .justify-content(center);
+    .flex-wrap(nowrap);
+    margin: @absolute-very-tight;
+    &-label {
+      margin: 0;
+      padding: @absolute-very-tight;
+      .font(@primary-fg-color, @absolute-loose, serif, @font-weight-thick);
+    }
+    &-display {
+      margin: 0;
+      padding: @absolute-very-tight;
+      .font(@primary-fg-color, @absolute-loose, serif, @font-weight-thin);
+    }
+  }
+
+  &-body {
+    .display();
+    .large-screen( {
+       
+        .flex-direction(row)
+      }
+      );
+
+    .medium-screen( {
+        .flex-direction(row)
+      }
+      );
+
+    .small-screen( {
+        .flex-basis(100%);
+        .flex-direction(column)
+      }
+      );
+  }
+  &-body-card-container {
+    padding: 0  0 @absolute-very-tight 0;
+    border-radius: @absolute-very-tight;
+    overflow-y: auto;
+    margin: @absolute-tight @absolute-very-tight;
+    &-loader{
+      padding: @absolute-very-tight;
+      margin: @absolute-tight @absolute-very-tight;
+    }
+    .large-screen( {
+        .flex-basis(80%);
+        max-height: 100vh;
+        max-width:80%;
+      }
+      );
+    .medium-screen( {
+        .flex-basis(70%);
+        max-height: 100vh;
+        max-width:70%;
+      }
+      );
+    .small-screen( {
+        .flex-basis(100%);
+        max-height: none;
+        max-width:100%;
+      }
+      );
+  }
+  &-body-action-container {
+    margin: 0 @absolute-very-tight;
+    .large-screen( {
+        .flex-basis(20%);
+        max-width:20%;
+      }
+      );
+    .medium-screen( {
+        .flex-basis(30%);
+        max-width:30%;
+      }
+      );
+    .small-screen( {
+      .flex-basis(100%);
+      max-width:100%;
+      }
+      );
+  }
+}

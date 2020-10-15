@@ -1,0 +1,25 @@
+.util {
+    &-text {
+        &-overflow-truncate {
+            .text-over-flow();
+        }
+        &-left-align {
+            text-align:left;
+        }
+        &-center-align {
+            text-align:center;
+        }
+        &-right-align {
+            text-align:right;
+        }
+    }
+
+    &-font-label {
+        .font(@darkgrey, @absolute-loose, monospace, @font-weight-thick);
+    }
+
+    &-header-text {
+        .font(@light-black, 1.25rem, serif, @font-weight-thick);
+        text-align:center;
+    }
+}
