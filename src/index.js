@@ -5,5 +5,4 @@ import spaceMissionManager from "./js/spaceMissionManager";
 spaceMissionManager.init();
 window.addEventListener("DOMContentLoaded", () => {
     spaceMissionManager.renderInitialCards();
-    console.log("triggered")
 })
