@@ -1,6 +1,6 @@
 # SpaceX
 
-SpaceX Launch Programs.
+SpaceX Launch Programs written in pure javascript without any framework.
 
 ## Quick Start
 
