@@ -32,7 +32,7 @@ export default class Component {
 
     /**
      * @def All the initialization should be implemented in this function
-     * @returns {undefined} returns does not return any value
+     * @returns {undefined} does not return any value
      */
     init() {
 
@@ -40,7 +40,7 @@ export default class Component {
 
     /**
      * @def All the data loading should be implemented in this function
-     * @returns {undefined} returns does not return any value
+     * @returns {undefined} does not return any value
      */
     loadData() {
 
@@ -49,7 +49,7 @@ export default class Component {
     /**
      * @def Rendering logic should be implemented in this function
      * Overridden method should return an element
-     * @returns {undefined} returns does not return any value
+     * @returns {undefined} does not return any value
      */
     render() {
         throw new Error("Derived class should override render method to provide their own implementation")
